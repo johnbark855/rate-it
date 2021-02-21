@@ -1,1 +1,41 @@
-<h1>Hello World!</h1>
+<div class="row">
+  <div class="col s12 m8 offset-m2">
+    <h2 class="header center">Rating Center</h2>
+    <div class="card horizontal">
+      <div class="card-stacked">
+        <div class="card-content">
+          <form>
+            <div class="row">
+              <div class="input-field col s12 m10 offset-m1">
+                <input id="userInput" type="text" class="validate">
+                <label class="active" for="userInput">Restaurant or Movie</label>
+              </div>
+              <div class="input-field col s12 m10 offset-m1">
+                <input id="userRating" type="number" class="validate" max="5">
+                <label class="active" for="userRating">Rating</label>
+              </div>
+              <div class="col s12 center">
+                <button type="submit" class="btn pull-s1">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12 m8 offset-m2">
+    <h2 class="header center">Previous Ratings</h2>
+    <div class="card horizontal">
+      <div class="card-stacked">
+        <div class="card-content">
+          <ul class="collection" id="prevRatings">
+            {{!-- <li class="collection-item">Rating <span class="right">5</span></li> --}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
