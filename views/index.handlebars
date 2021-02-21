@@ -4,18 +4,18 @@
     <div class="card horizontal">
       <div class="card-stacked">
         <div class="card-content">
-          <form>
+          <form class="formInput">
             <div class="row">
               <div class="input-field col s12 m10 offset-m1">
-                <input id="userInput" type="text" class="validate">
+                <input id="userInput" name="userInput" type="text" class="validate">
                 <label class="active" for="userInput">Restaurant or Movie</label>
               </div>
               <div class="input-field col s12 m10 offset-m1">
-                <input id="userRating" type="number" class="validate" max="5">
+                <input id="userRating" name="userRating" type="number" class="validate" max="5">
                 <label class="active" for="userRating">Rating</label>
               </div>
               <div class="col s12 center">
-                <button type="submit" class="btn pull-s1">Submit</button>
+                <input type="submit" value="submit" class="btn pull-s1" />
               </div>
             </div>
           </form>
@@ -32,7 +32,11 @@
       <div class="card-stacked">
         <div class="card-content">
           <ul class="collection" id="prevRatings">
-            {{!-- <li class="collection-item">Rating <span class="right">5</span></li> --}}
+            {{#each items}}
+            <li class="collection-item">{{dataValues.item}}<span type="submit" class="badge btn"><i
+                  class="material-icons" type="userDelete" data-values="{{dataValues.id}}">delete</i></span><span
+                class="right">{{dataValues.rating}}</span></li>
+            {{/each}}
           </ul>
         </div>
       </div>
