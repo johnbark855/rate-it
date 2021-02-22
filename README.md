@@ -47,6 +47,32 @@ This program is a simple and intuitive rate it application. Enter any movie, res
 `-- server.js
 ```
 
+```bash
+├── config
+│   └── config.js
+├── LICENSE
+├── models
+│   ├── index.js
+│   └── items.js
+├── package.json
+├── package-lock.json
+├── public
+│   └── js
+│       └── main.js
+├── README.md
+├── routes
+│   ├── api-routes.js
+│   └── html-routes.js
+├── server.js
+└── views
+    ├── index.handlebars
+    ├── layouts
+    │   └── main.handlebars
+    └── partials
+        ├── footer.handlebars
+        └── nav.handlebars
+```
+
 ### File Descriptions
 
     1. Develop Directory - contains the html and Javascript files to run the authentication program
