@@ -23,9 +23,9 @@ This program is a simple and intuitive rate it application. Enter any movie, res
 ## Site Structure
 
 |-- config
-|   `-- config.js
+    `-- config.js
 |-- models
-|   |-- index.js
+    |-- index.js
 |   `-- items.js
 |-- public
 |   `-- js
