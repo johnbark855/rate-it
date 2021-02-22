@@ -1,16 +1,18 @@
 ![GitHub License](https://img.shields.io/badge/MIT-License-informational) ![GitHub License](https://img.shields.io/badge/Node-JavaScript-informational) ![GitHub License](https://img.shields.io/badge/Sequelize-Package-informational) ![GitHub License](https://img.shields.io/badge/Express-Server-informational) ![GitHub License](https://img.shields.io/badge/MySQL2-Database-informational) ![GitHub License](https://img.shields.io/badge/Handlebars-informational)
 
-# Rate-It!
+# Rate-It
+
+---
 
 ## Table of Contents
 
-    * Description
-    * Site Structure
-    * Installation
-    * Usage
-    * Contributing
-    * Questions
-    * License
+- [Description](#description)
+- [Site Structure](#site-structure)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Questions](#question)
+- [License](#license)
 
 ---
 
