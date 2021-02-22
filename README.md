@@ -22,6 +22,31 @@ This program is a simple and intuitive rate it application. Enter any movie, res
 
 ## Site Structure
 
+├── config
+│   └── config.js                   (database access configuration for development, test, and production instances)
+├── LICENSE
+├── models
+│   ├── index.js                    (JavaScript code that envokes Sequelize to compare user input with database)
+│   └── items.js                    (JavaScript code to envoke Sequelize for creating the data types)
+├── package.json                    (Node Package Manager (NPM) application configuration for Node.js and dependencies)
+├── package-lock.json               (NPM installation directory tree)
+├── public
+│   └── js
+│       └── main.js                 (JavaScritp code that gets user input from the HTML forms to store and/or delete)
+├── README.md                       (Detailed description and outline of this program)
+├── routes
+│   ├── api-routes.js               (JavaScript code for API gets, creates, and deletes for user input)
+│   └── html-routes.js              (JavaScript code that gets all the data in the database and re-renders it on the webpage)
+├── server.js                       (JavaScript code that envokes and establishes the express service session connection and diplays the webpages via html-routes.js and api-routes.js files)
+└── views
+    ├── index.handlebars            (Body of webpage that user content is added and removed)
+    ├── layouts
+    │   └── main.handlebars         (Main/base HTML webpage)
+    └── partials
+        ├── footer.handlebars       (Footer for main/base HTML webpage)
+        └── nav.handlebars          (Navigation bar for main/base HTML webpage)
+
+
     1. Develop Directory - contains the html and Javascript files to run the authentication program
 
         * config directory
@@ -29,8 +54,7 @@ This program is a simple and intuitive rate it application. Enter any movie, res
                 * config.json file (database access configuration for development, test, and
                                      production instances)
         * models directory
-                * index.js file (JavaScript code to envokes sequelize to compare user input
-                                 with database)
+                * index.js file (JavaScript code to envokes sequelize to compare user input with database)
                 * items.js file (JavaScript code to envoke Sequelize to creating the data types)
         * public directory
             - js directory
@@ -38,8 +62,7 @@ This program is a simple and intuitive rate it application. Enter any movie, res
                                 and delete the data.)
         * routes directory
             - api-routes.js file (JavaScript code for API gets, creates, and deletes user input)
-            - html-routes.js file (JavaScript code that gets all the data and re-renders it on
-                                   the webpage)
+            - html-routes.js file (JavaScript code that gets all the data and re-renders it on the webpage)
         * views
             - layouts
                 * main.handlebars (main/base HTML webpage)
