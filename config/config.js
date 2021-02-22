@@ -1,3 +1,7 @@
+/*
+  Using environment varibles to protect access to the mysql database
+*/
+
 require("dotenv").config();
 
 module.exports = {

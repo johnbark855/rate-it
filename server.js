@@ -1,4 +1,6 @@
-//Server generated
+/*
+  Default generated code for express server and handlebars
+*/
 const express = require("express");
 const path = require("path");
 const app = express();
