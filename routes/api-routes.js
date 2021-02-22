@@ -1,3 +1,7 @@
+/*
+  API routes to get, post, and delete user entries from application
+*/
+
 const db = require("../models");
 
 module.exports = (app) => {
