@@ -21,6 +21,18 @@ app.engine(
 );
 app.set("view engine", "handlebars");
 
+var hbs = exphbs.create({});
+
+// register new function
+hbs.handlebars.registerHelper("renderStars", (rating) => {
+  let result = "";
+  for (let i = 1; i <= 5; i++) {
+    let checked = rating >= i ? "star" : "star_outline";
+    result += `<span class="material-icons big_star">${checked}</span>`;
+  }
+  return new hbs.handlebars.SafeString(result);
+});
+
 require("./routes/api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 
