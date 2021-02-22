@@ -1,3 +1,7 @@
+/*
+    Sequelize data structure for mysql database instance
+*/
+
 module.exports = (sequelize, DataTypes) => {
   const Items = sequelize.define("Items", {
     item: {
