@@ -39,8 +39,8 @@ $(document).ready(function () {
   }
 
   $(".userDelete").on("click", function (e) {
-    console.log(id);
     let id = `${e.target.id}`;
+    console.log(id);
     fetch(`/api/items/${id}/`, {
       method: "DELETE",
     }).then(function (response) {
@@ -49,5 +49,4 @@ $(document).ready(function () {
       }
     });
   });
-
 });
