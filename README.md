@@ -18,7 +18,7 @@
 
 ## Description
 
-This application is starter code to configure and set up authentication to a program. It uses sequilized and passport packages to store and prompt the user for authentication.
+This program is a simple and intuitive rate it application. Enter any movie, restaurant, or product and give it a rating from 1 (bad) to 5 (great).
 
 ## Site Structure
 
