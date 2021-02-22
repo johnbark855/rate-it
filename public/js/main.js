@@ -38,15 +38,16 @@ $(document).ready(function () {
       });
   }
 
-  userDelete.on("delete", function (event) {
-    $.delete("api/items:id", {
-      id: id,
-    })
-      .then(function () {
-        window.location.replace("/");
-      })
-      .catch(function (err) {
-        console.log(err);
-      });
+  $(".userDelete").on("click", function (e) {
+    console.log(id);
+    let id = `${e.target.id}`;
+    fetch(`/api/items/${id}/`, {
+      method: "DELETE",
+    }).then(function (response) {
+      if (response.ok) {
+        location.replace(`/`);
+      }
+    });
   });
+
 });
