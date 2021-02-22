@@ -22,29 +22,29 @@ This program is a simple and intuitive rate it application. Enter any movie, res
 
 ## Site Structure
 
-├── config
-│   └── config.js
-├── LICENSE
-├── models
-│   ├── index.js
-│   └── items.js
-├── package.json
-├── package-lock.json
-├── public
-│   └── js
-│   └── main.js
-├── README.md
-├── routes
-│   ├── api-routes.js
-│   └── html-routes.js
-├── server.js
-└── views
-├── index.handlebars
-├── layouts
-│   └── main.handlebars
-└── partials
-├── footer.handlebars
-└── nav.handlebars
+|-- config
+|   `-- config.js
+|-- models
+|   |-- index.js
+|   `-- items.js
+|-- public
+|   `-- js
+|       `-- main.js
+|-- routes
+|   |-- api-routes.js
+|   `-- html-routes.js
+|-- views
+|   |-- layouts
+|   |   `-- main.handlebars
+|   |-- partials
+|   |   |-- footer.handlebars
+|   |   `-- nav.handlebars
+|   `-- index.handlebars
+|-- LICENSE
+|-- package.json
+|-- package-lock.json
+|-- README.md
+`-- server.js
 
 ### File Descriptions
 
