@@ -23,29 +23,30 @@ This program is a simple and intuitive rate it application. Enter any movie, res
 ## Site Structure
 
 ├── config
-│   └── config.js                   (database access configuration for development, test, and production instances)
+│   └── config.js
 ├── LICENSE
 ├── models
-│   ├── index.js                    (JavaScript code that envokes Sequelize to compare user input with database)
-│   └── items.js                    (JavaScript code to envoke Sequelize for creating the data types)
-├── package.json                    (Node Package Manager (NPM) application configuration for Node.js and dependencies)
-├── package-lock.json               (NPM installation directory tree)
+│   ├── index.js
+│   └── items.js
+├── package.json
+├── package-lock.json
 ├── public
 │   └── js
-│       └── main.js                 (JavaScritp code that gets user input from the HTML forms to store and/or delete)
-├── README.md                       (Detailed description and outline of this program)
+│   └── main.js
+├── README.md
 ├── routes
-│   ├── api-routes.js               (JavaScript code for API gets, creates, and deletes for user input)
-│   └── html-routes.js              (JavaScript code that gets all the data in the database and re-renders it on the webpage)
-├── server.js                       (JavaScript code that envokes and establishes the express service session connection and diplays the webpages via html-routes.js and api-routes.js files)
+│   ├── api-routes.js
+│   └── html-routes.js
+├── server.js
 └── views
-    ├── index.handlebars            (Body of webpage that user content is added and removed)
-    ├── layouts
-    │   └── main.handlebars         (Main/base HTML webpage)
-    └── partials
-        ├── footer.handlebars       (Footer for main/base HTML webpage)
-        └── nav.handlebars          (Navigation bar for main/base HTML webpage)
+├── index.handlebars
+├── layouts
+│   └── main.handlebars
+└── partials
+├── footer.handlebars
+└── nav.handlebars
 
+### File Descriptions
 
     1. Develop Directory - contains the html and Javascript files to run the authentication program
 
