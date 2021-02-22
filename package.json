@@ -2,11 +2,11 @@
   "name": "rate-it",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server",
     "watch": "nodemon server",
-    "lint": "eslint **/*.js --quiet",
+    "lint": "eslint '**/*.js' --quiet",
     "test": "npm run lint"
   },
   "repository": {
@@ -14,8 +14,8 @@
     "url": "git+https://github.com/lucpizz/rate-it.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "lucpizz",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lucpizz/rate-it/issues"
   },
