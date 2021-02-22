@@ -21,31 +21,6 @@
 This program is a simple and intuitive rate it application. Enter any movie, restaurant, or product and give it a rating from 1 (bad) to 5 (great).
 
 ## Site Structure
-```bash
-|-- config
-    `-- config.js
-|-- models
-    |-- index.js
-|   `-- items.js
-|-- public
-|   `-- js
-|       `-- main.js
-|-- routes
-|   |-- api-routes.js
-|   `-- html-routes.js
-|-- views
-|   |-- layouts
-|   |   `-- main.handlebars
-|   |-- partials
-|   |   |-- footer.handlebars
-|   |   `-- nav.handlebars
-|   `-- index.handlebars
-|-- LICENSE
-|-- package.json
-|-- package-lock.json
-|-- README.md
-`-- server.js
-```
 
 ```bash
 ├── config
@@ -55,7 +30,6 @@ This program is a simple and intuitive rate it application. Enter any movie, res
 │   ├── index.js
 │   └── items.js
 ├── package.json
-├── package-lock.json
 ├── public
 │   └── js
 │       └── main.js
@@ -75,15 +49,16 @@ This program is a simple and intuitive rate it application. Enter any movie, res
 
 ### File Descriptions
 
-    1. Develop Directory - contains the html and Javascript files to run the authentication program
+    1. Main Directory - contains the html and Javascript files to run the authentication program
 
         * config directory
-            - middleware directory
-                * config.json file (database access configuration for development, test, and
-                                     production instances)
+            - config.json file (database access configuration for development, test, and
+                                production instances)
         * models directory
                 * index.js file (JavaScript code to envokes sequelize to compare user input with database)
                 * items.js file (JavaScript code to envoke Sequelize to creating the data types)
+         * package.json file (Node configuration file list program details, scripts, license,
+                             and dependencies packages)
         * public directory
             - js directory
                 * main.js file (JavaScript code that gets input from the html forms to store
@@ -91,6 +66,8 @@ This program is a simple and intuitive rate it application. Enter any movie, res
         * routes directory
             - api-routes.js file (JavaScript code for API gets, creates, and deletes user input)
             - html-routes.js file (JavaScript code that gets all the data and re-renders it on the webpage)
+        * server.js file (JavaScript code that envokes and establishes the express service
+                          session connection and diplays the webpages via html-routes.js and api-routes.js files)
         * views
             - layouts
                 * main.handlebars (main/base HTML webpage)
@@ -98,10 +75,6 @@ This program is a simple and intuitive rate it application. Enter any movie, res
                 * footer.handlebars (footer for main/base HTML webpage)
                 * nav.handlebars (navigation bar for main/base HTML webpage)
             - index.handlebars (body of webpage that user content is added and removed)
-        * package.json file (Node configuration file list program details, scripts, license,
-                             and dependencies packages)
-        * server.js file (JavaScript code that envokes and establishes the express service
-                          session connection and diplays the webpages via html-routes.js and api-routes.js files)
 
 ---
 
@@ -146,12 +119,12 @@ Please contact me at lucpizz@gmail.com for any questions regarding this program.
 
 ## License
 
-ISC License
+MIT License
 
-Copyright (c) 4-digit year, lucpizz
+Copyright (c) 2021 Luca Pizzoferrato
 
-Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-Source: http://opensource.org/licenses/ISC
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
