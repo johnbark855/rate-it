@@ -25,7 +25,8 @@ app.set("view engine", "handlebars");
 
 var hbs = exphbs.create({});
 
-// register new function
+// register new function for handlebars to render stars on index.handlebars
+
 hbs.handlebars.registerHelper("renderStars", (rating) => {
   let result = "";
   for (let i = 1; i <= 5; i++) {
