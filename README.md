@@ -1,18 +1,21 @@
 ![GitHub License](https://img.shields.io/badge/MIT-License-informational) ![GitHub License](https://img.shields.io/badge/Node-JavaScript-informational) ![GitHub License](https://img.shields.io/badge/Sequelize-Database-informational) ![GitHub License](https://img.shields.io/badge/Express-Server-informational) ![GitHub License](https://img.shields.io/badge/MySQL2-Database-informational) ![GitHub License](https://img.shields.io/badge/Handlebars-HTML-informational)
 
-# Rate-It
-
----
+# Rate-IT
 
 ## Table of Contents
 
 - [Description](#description)
+- [Deployed Application](#deployed-applicaiton)
 - [Site Structure](#site-structure)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Questions](#question)
 - [License](#license)
+
+---
+
+## Deployed Application
 
 ---
 
@@ -23,17 +26,25 @@ This program is a simple and intuitive rate it application. Enter any movie, res
 ## Site Structure
 
 ```bash
+├── .env
+├── .eslintignore
+├── .eslintrc.json
+├── .gitignore
+├── .travis.yml
+├── LICENSE
+├── README.md
 ├── config
 │   └── config.js
-├── LICENSE
 ├── models
 │   ├── index.js
 │   └── items.js
+├── package-lock.json
 ├── package.json
 ├── public
+│   ├── css
+│   │   └── main.css
 │   └── js
 │       └── main.js
-├── README.md
 ├── routes
 │   ├── api-routes.js
 │   └── html-routes.js
@@ -49,49 +60,55 @@ This program is a simple and intuitive rate it application. Enter any movie, res
 
 ### File Descriptions
 
-    1. Main Directory - contains the html and Javascript files to run the authentication program
+1. Main Directory RATE-IT
 
-        * config directory
-            - config.json file (database access configuration for development, test, and
-                                production instances)
-        * models directory
-                * index.js file (JavaScript code to envokes sequelize to compare user input with database)
-                * items.js file (JavaScript code to envoke Sequelize to creating the data types)
-         * package.json file (Node configuration file list program details, scripts, license,
-                             and dependencies packages)
-        * public directory
-            - js directory
-                * main.js file (JavaScript code that gets input from the html forms to store
-                                and delete the data.)
-        * routes directory
-            - api-routes.js file (JavaScript code for API gets, creates, and deletes user input)
-            - html-routes.js file (JavaScript code that gets all the data and re-renders it on the webpage)
-        * server.js file (JavaScript code that envokes and establishes the express service
-                          session connection and diplays the webpages via html-routes.js and api-routes.js files)
-        * views
-            - layouts
-                * main.handlebars (main/base HTML webpage)
-            - partials
-                * footer.handlebars (footer for main/base HTML webpage)
-                * nav.handlebars (navigation bar for main/base HTML webpage)
-            - index.handlebars (body of webpage that user content is added and removed)
+- .env (environmental variables)
+- .eslintignore (lint ignore)
+- .eslintrc.json (lint configuration)
+- .gitignore (git ignore)
+- .travis.yml (travis-ci configuration)
+- LICENSE (MIT license)
+- config directory
+  - config.json (database access configuration for development, test, and production instances)
+- models directory
+  - index.js (JavaScript code to envokes sequelize to compare user input with database)
+  - items.js (JavaScript code to envoke Sequelize to creating the data types)
+- package.json (Node configuration list program details, scripts, license,and dependencies packages)
+  - public directory
+    - css directory
+      - main.css (css configuration for rating star color)
+    - js directory
+      - main.js (JavaScript code that gets input from the html forms to store
+        and delete the data.)
+  - routes directory
+    - api-routes.js (JavaScript code for API gets, creates, and deletes user input)
+    - html-routes.js (JavaScript code that gets all the data and re-renders it on the webpage)
+  - server.js (JavaScript code that envokes and establishes the express service
+    session connection and diplays the webpages via html-routes.js and api-routes.js files)
+  - views
+    - layouts
+      - main.handlebars (main/base HTML webpage)
+    - partials
+      - footer.handlebars (footer for main/base HTML webpage)
+      - nav.handlebars (navigation bar for main/base HTML webpage)
+    - index.handlebars (body of webpage that user content is added and removed)
 
 ---
 
 ## Installation
 
-    1. Create this repostiory by using the GitHub forking process onto your computer
-    2. Install NPM the Node Project Manager to your program directory
-    3. Install dependecies to your program directory (npm install "package name"):
-        - Node
-        - Nodemon
-        - Express
-        - Eslint
-        - MySQL2
-        - Handlebars
-        - Sequelize
-    4. Watch server run "watch" to enable nodemon server.js for testing
-    6. Start server run "start" to envoke node server.js in terminal
+1. Create this repostiory by using the GitHub forking process onto your computer
+2. Install NPM the Node Project Manager to your program directory
+3. Install dependecies to your program directory (npm install "package name"):
+   - Node
+   - Nodemon
+   - Express
+   - Eslint
+   - MySQL2
+   - Handlebars
+   - Sequelize
+4. Watch server run "watch" to enable nodemon server.js for testing
+5. Start server run "start" to envoke node server.js in terminal
 
 ---
 
