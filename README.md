@@ -15,10 +15,6 @@
 
 ---
 
-## Deployed Application
-
----
-
 ## Description
 
 This program is a simple and intuitive rate it application. Enter any movie, restaurant, or product and give it a rating from 1 (bad) to 5 (great).
