@@ -1,0 +1,54 @@
+<div class="row">
+  <div class="col s12 m8 offset-m2">
+    <bold>
+      <h2 class="header center">Ratings!</h2>
+    </bold>
+    <body style = background-image: url(https://www.maxpixel.net/static/photo/640/Peer-Review-Peer-Review-Icon-Review-Feedback-2888794.jpg)>
+    <div class="card horizontal">
+      <div class="card-stacked">
+        <div class="card-content">
+          <form class="formInput">
+            <div class="row">
+              <div class="input-field col s12 m10 offset-m1">
+                <input id="userInput" name="userInput" type="text" class="validate">
+                <label class="active" for="userInput">Please insert Restaurant or Movie you would like to rate</label>
+              </div>
+              <div class="input-field col s12 m10 offset-m1">
+                <input id="userRating" name="userRating" type="number" class="validate" max="5">
+                <label class="active" for="userRating">Enter Number Star Rating from 1 to 5! 1 represents the worst and 5 represents the best.</label>
+              </div>
+              <div class="col s15 center">
+                <input type="submit" value="submit" class="btn pull-s1 teal darken-2" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<div class="row">
+  <div class="col s15 m8 offset-m3">
+    <h2 class="header center">Saved Ratings</h2>
+    <div class="card horizontal">
+      <div class="card-stacked">
+        <div class="card-content">
+          <ul class="collection" id="prevRatings">
+            {{#each items}}
+            <li class="collection-item">
+              <span>{{dataValues.item}}</span>
+              {{#renderStars dataValues.rating}}
+              <p>{{this}}</p>
+              {{/renderStars}}
+              <span type="submit" class="badge btn teal darken-1"><i class="material-icons userDelete"
+                  style="color:rgba(255, 255, 255, 0.349)" id="{{dataValues.id}}">delete</i>
+              </span>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.big_star {
+  height: 18px;
+  width: 18px;
+  color: hsl(51, 100%, 50%);
+}
+.sidenav {
+  color: rgb(95, 8, 8)
+}
+.footer-copyright{
+  color:rgb(95, 8, 8)
+  
+}.background-image{
+  opacity: 70%;
+}
